@@ -5,12 +5,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import com.hospital.web.dao.BoardDAO;
 import com.hospital.web.domain.ArticleDTO;
 import com.hospital.web.service.BoardService;
-
-@Repository
+@Service
 public class BoardServiceImpl implements BoardService {
 	@Autowired BoardService sevice;
 	@Autowired BoardDAO dao;

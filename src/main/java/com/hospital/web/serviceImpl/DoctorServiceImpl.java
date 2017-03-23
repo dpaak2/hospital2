@@ -1,10 +1,12 @@
 package com.hospital.web.serviceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
 import com.hospital.web.domain.DoctorDTO;
 import com.hospital.web.service.DoctorService;
 
-@Repository
+@Service
 public class DoctorServiceImpl implements DoctorService{
 	@Autowired DoctorService service;
 	@Override

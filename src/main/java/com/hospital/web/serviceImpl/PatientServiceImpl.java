@@ -28,7 +28,7 @@ public class PatientServiceImpl implements PatientService{
 	@Override
 	public PatientDTO login(PatientDTO patient) throws Exception {
 	
-		session = this.findById(patient.patID());
+		session =null ;/*this.findById(patient.patID())*/
 		return session;
 	}
 	@Override
@@ -48,16 +48,17 @@ public class PatientServiceImpl implements PatientService{
 
 	@Override
 	public String getBirth(String patJumin) {
-		
-		int year = Integer.parseInt(session.getPatJumin().substring(0,2));
+		String temp=null;
+		/*int year = Integer.parseInt(session.getPatJumin().substring(0,2));
 		int month = Integer.parseInt(session.getPatJumin().substring(2,4));
 		int day = Integer.parseInt(session.getPatJumin().substring(4,6));
-		String temp = String.format("19%d斥 %d岿 %d老", year,month,day);
+		String temp = String.format("19%d斥 %d岿 %d老", year,month,day);*/
 		return temp;
 	}
 	@Override
 	public String getAge(String patJumin) {
-		return String.valueOf(117-Integer.parseInt(session.getPatJumin().substring(0,2))+1)+"技";
+		return null;
+				/* String.valueOf(117-Integer.parseInt(session.getPatJumin().substring(0,2))+1)+"技";*/
 	}
 
 	@Override
