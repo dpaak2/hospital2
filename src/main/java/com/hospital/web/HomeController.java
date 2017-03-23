@@ -37,6 +37,6 @@ public class HomeController {
 	
 	@RequestMapping()
 	public String home(){
-		return "public:common/mainCommon";
+		return "public:common/container";
 	}
 }

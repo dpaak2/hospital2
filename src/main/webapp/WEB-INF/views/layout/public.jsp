@@ -3,15 +3,13 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <title><tiles:getAsString name="title"></tiles:getAsString></title>
-<link rel="stylsheet" type="text/css" href="${context.css}/hanbit.css"/>
+<link rel="stylsheet" href="${context.css}/hanbit.css"/>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="${context.js}/hospital.js"></script>
